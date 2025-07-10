@@ -11,7 +11,7 @@
 body {
   font-family: var(--font-family-base);
   color: #212529;
-  background-color: #fff8f8;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -67,7 +67,43 @@ h1 {
 
 p {
   font-size: 1rem;
-  color: #6c757d;
+  color: #ffffff;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-image: url('media/fondo/fondo.png'); /* Fondo base */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.parallax-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('media/fondo/parallax.png'); /* Fondo que se mueve */
+  background-size: cover;
+  background-position: center;
+  opacity: 100;
+  z-index: 0;
+  pointer-events: none;
+  transform: translateY(0);
+  transition: transform 0.2s ease-out;
+}
+
+/* Asegura que el contenido esté encima */
+.hero .row {
+  position: relative;
+  z-index: 1;
+}
+
+.hero img {
+  margin-top: 80px; /* Ajustá este valor según lo que necesites */
 }
 
 /* Botones */
@@ -209,7 +245,7 @@ img.rounded-circle {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--dark-color);
+  color: #ffffff;
 }
 
 .h2-custom {
