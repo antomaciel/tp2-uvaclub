@@ -1,6 +1,6 @@
 /* 1. VARIABLES DE DISEÑO */
 :root {
-  --primary-color: #47b2e4;
+  --primary-color: #d9378b;
   --secondary-color: #6c757d;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
@@ -17,6 +17,24 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url('media/fondo/fondo-general.png'); /* tu imagen base */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2; /* por si la imagen no carga */
+  color: #222; /* color de texto general */
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style:normal;
+}
+
+
 /* 3. NAVBAR */
 .navbar {
   background-color: transparent;
@@ -32,11 +50,11 @@ body {
 .navbar-brand {
   font-weight: 600;
   font-size: 1.7rem;
-  color: var(--dark-color);
+  color: #3844e8;
 }
 
 .nav-link {
-  color: var(--dark-color);
+  color: #3844e8;
   font-weight: 500;
   margin-left: 20px;
   transition: color 0.3s;
@@ -62,7 +80,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: var(--dark-color);
+  color: #3844e8;
 }
 
 p {
@@ -106,6 +124,17 @@ p {
   margin-top: 80px; /* Ajustá este valor según lo que necesites */
 }
 
+.planes-suscripcion {
+  background-image: url('media/fondo/fondo-seccion-sub.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+}
+
+
 /* Botones */
 .btn {
   border-radius: 50px;
@@ -115,17 +144,17 @@ p {
 }
 
 .btn-dark {
-  background-color: var(--primary-color);
+  background-color:  #d9378b;
   border: none;
 }
 
 .btn-dark:hover {
-  background-color: #369cc5;
+  background-color: #3844e8;
 }
 
 .btn-outline-dark {
   border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  color: #d9378b;
 }
 
 .btn-outline-dark:hover {
@@ -327,6 +356,76 @@ img.rounded-circle {
 .section-spacing-sm {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+/* Cambia color de fondo y texto solo en la sección de suscripción */
+.planes-suscripcion {
+  background-image: url('media/fondo/fondo-seccion-sub.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+/* Hace que el texto dentro de esa sección sea blanco */
+.planes-suscripcion h2 {
+  color: white !important; 
+}
+
+.planes-suscripcion h5,
+.planes-suscripcion p,
+.planes-suscripcion li {
+ color: rgb(41, 41, 41) !important; 
+}
+
+/* Tarjetas personalizadas solo para esta sección */
+.planes-suscripcion .card {
+  background-color: rgba(255, 255, 255, 0.932); /* Fondo oscuro translúcido */
+  color: white;
+  border: none;
+}
+
+/* Cambia el color del título y precio */
+.planes-suscripcion .text-primary {
+  color: #3844e8 !important; /* Rosa claro o lo que quieras */
+}
+
+/* Estilo del botón dentro de esa sección */
+.planes-suscripcion .btn-primary {
+  background-color: #d9378b;
+  border: none;
+  color: #fff;
+}
+
+.planes-suscripcion .btn-primary:hover {
+  background-color: #3844e8;
+  color: #fff;
+}
+
+/* Badge de recomendado */
+.planes-suscripcion .badge {
+  background-color: #3844e8;
+}
+
+/* Cambia el borde del plan recomendado */
+.planes-suscripcion .card.border-primary {
+  border: 2px solid #d9378b !important; 
+}
+
+/* Cambiar el color del badge "Recomendado" */
+.planes-suscripcion .badge.bg-primary {
+  background-color: #3844e8 !important;  
+  color: white !important;
+  font-weight: 1000;
+  padding: 0.5em 0.75em;
+  font-size: 0.8rem;
+   border-radius: 4px; /* esquinas ligeramente redondeadas */
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 
