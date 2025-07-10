@@ -428,6 +428,28 @@ img.rounded-circle {
   vertical-align: middle;
 }
 
+.cta-fondo {
+  background-image: url('media/fondo/fondo-seccion-presub.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;  /* padding arriba y abajo */
+  color: white;
+  border-radius: 0;  /* sin bordes redondeados para que ocupe todo */
+  width: 100vw;      /* ancho total de la ventana */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+.cta-fondo > .container {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* ============================== */
 /* MEDIA QUERIES */
