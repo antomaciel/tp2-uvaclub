@@ -48,26 +48,35 @@
 
 
 <!-- HERO: Sección de portada con llamado a la acción -->
+<body class="home-page">
+</body>
 <section class="hero position-relative" style="min-height: 100vh; padding-top: 100px;">
-  <div class="parallax-overlay"></div>
-
   <div class="container">
     <div class="row align-items-center">
-    <!-- Texto principal -->
-    <div class="col-lg-6">
-      <h1 class="h1-custom">Descubrí vinos únicos sin salir de casa</h1>
-      <p class="p-custom">Vinos curados por sommeliers + maridajes. Explorá nuevas etiquetas cada mes y compartí la experiencia con otros amantes del vino.</p>
-      <div class="d-flex gap-3 mt-4">
-        <a href="#" class="btn btn-dark">EMPEZÁ HOY</a>
+      
+      <!-- Texto principal -->
+      <div class="col-lg-6">
+        <h1 class="h1-custom">Descubrí vinos únicos sin salir de casa</h1>
+        <p class="p-custom">Vinos curados por sommeliers + maridajes. Explorá nuevas etiquetas cada mes y compartí la experiencia con otros amantes del vino.</p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="#" class="btn btn-dark">EMPEZÁ HOY</a>
+        </div>
       </div>
-    </div>
-    <!-- Imagen destacada -->
-    <div class="col-lg-6 text-center">
-      <img src="media/fondo/img.png" class="img-fluid img-rounded" alt="Imagen Hero">
+      <!-- Imagen solo para mobile -->
+<img src="media/fondo/img-mobile.png" alt="Imagen Hero Mobile"
+  class="hero-img-mobile d-block d-md-none">
+      <!-- Imagen destacada -->
+      <div class="col-lg-6 text-center">
+        <img src="media/fondo/img.png" alt="Imagen Hero"
+        class="img-fluid"
+        style="max-width: 100%; height: auto; max-height: 500px; object-fit: contain;">
+      </div>
+
     </div>
   </div>
 </section>
 <!-- /HERO -->
+
 
 
 <!-- TEAM: Presentación del equipo -->
@@ -116,13 +125,22 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
   </div>
 </section>
 
-<!-- CTA: Llamado a la acción final -->
-<section class="section-spacing text-center my-5 cta-fondo">
-  <div class="container">
-  <h2 class="h2-custom">¿Listo para empezar tu ritual?</h2>
-  <p class="p-custom">Descubrí una forma distinta de disfrutar el vino. Sin prisas, sin excusas. Solo vos, una copa y el universo por explorar.</p>
+<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 class="display-5" class="h2-custom">¿Listo para empezar tu ritual?</h2>
+      <p class="lead-custom">Descubrí una forma distinta de disfrutar el vino. Sin prisas, sin excusas. Solo vos, una copa y el universo por explorar.
+      </p>
+    </div>
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <img src="media/otros/img-pre-seccion.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    </div>
+  </div>
 </section>
-<!-- /CTA -->
+
 
 <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
 <section class="section-spacing planes-suscripcion text-center">
@@ -215,6 +233,22 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
 </section>
 <!-- /PLANES DE SUSCRIPCIÓN -->
 
+<!-- SECCIÓN B: descuento -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="media/otros/descuento.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 class="display-5" class="h2-custom">Tu primera copa de vino, con un 10% de regalo</h2>
+      <p class="lead-custom">Sumate hoy a Uvaclub y aprovechá un 10% de descuento en tu primera suscripción. Elegí el plan que quieras, brindamos nosotros.</p>
+          <a href="#" class="btn btn-primary mt-3">VER MÁS</a>
+    </div>
+  </div>
+</section>
+
 <!-- TEAM: Presentación del equipo -->
 <section class="section-spacing container text-center">
   <h2 class="h2-custom">Beneficios exclusivos para suscriptores</h2>
@@ -253,15 +287,15 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
         </div>
       </div>
     </div>
-     <div class="col-md-3">
+    <div class="col-md-3">
       <div class="card h-100">
         <img src="media/otros/galeria-2.png" class="card-img-top" alt="">
         <div class="card-body">
-          <p class="card-text small">Para abrir y compartir conversaciones.</p>
+          <p class="card-text small">Fresco, liviano y con alma veraniega.</p>
         </div>
       </div>
     </div>
-     <div class="col-md-3">
+    <div class="col-md-3">
       <div class="card h-100">
         <img src="media/otros/galeria-3.png" class="card-img-top" alt="">
         <div class="card-body">
@@ -269,11 +303,11 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
         </div>
       </div>
     </div>
-     <div class="col-md-3">
+    <div class="col-md-3">
       <div class="card h-100">
         <img src="media/otros/galeria-4.png" class="card-img-top" alt="">
         <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
+          <p class="card-text small">Para abrir y compartir conversaciones.</p>
         </div>
       </div>
     </div>
@@ -311,7 +345,7 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          Uvaclub es una suscripción pensada para los amantes del vino y el universo que lo rodea. Cada mes, recibís en tu casa una caja cuidadosamente seleccionada con vinos únicos, recomendaciones personalizadas y contenido exclusivo. Es más que una caja: es una experiencia que conecta constelaciones con sabores.
         </div>
       </div>
     </div>
@@ -324,7 +358,16 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          El costo mensual es de $55.000
+Incluye:
+
+2 botellas de vino premium seleccionadas por sommeliers.
+
+Un regalo sorpresa en cada caja (accesorios, arte o delicias gourmet).
+
+Acceso anticipado a lanzamientos y descuentos especiales.
+
+Invitaciones exclusivas a catas y eventos.
         </div>
       </div>
     </div>
@@ -337,7 +380,7 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          Es muy fácil. Solo tenés que ingresar a nuestra web, elegir tu plan y completar tus datos. ¡Y listo! Tu primera caja te llega directo a casa con el próximo envío mensual. Además, podés gestionar todo desde tu perfil de usuario.
         </div>
       </div>
     </div>
@@ -350,7 +393,17 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          Al ser parte de Uvaclub, accedés a:
+
+Vinos únicos que no encontrás en supermercados.
+
+Descuentos exclusivos para miembros.
+
+Regalos y contenido curado para vos.
+
+Una comunidad que celebra el vino, el diseño y la magia de lo inesperado.
+
+Y sí, también podés descubrir nuevas constelaciones con cada etiqueta 
         </div>
       </div>
     </div>
@@ -363,7 +416,7 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          Sí, podés pausarla o cancelarla en cualquier momento desde tu cuenta. No hay compromiso de permanencia, porque creemos que la libertad también es parte del disfrute.
         </div>
       </div>
     </div>
@@ -400,7 +453,7 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
         </div>
       </div>
     </div>
-     Controles -->
+    Controles -->
   </div>
 </section>
 

@@ -47,8 +47,8 @@
 
 
 <!-- HERO: Sección de portada con llamado a la acción -->
+<body class="detalle">
 <section class="hero position-relative" style="min-height: 100vh; padding-top: 100px;">
-  <div class="parallax-overlay"></div>
   <div class="container">
     <div class="row align-items-center">
     <!-- Texto principal -->
@@ -101,14 +101,15 @@
     <!-- Columna de imagen --> 
     <div class="col-lg-6 text-center mb-4 mb-lg-0">
       <img src="media/otros/info-vino.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-      <p class="display-6 text-primary">$55.000 <small>/ mes</small></p>
+      
     </div>
     <!-- Columna de texto -->
     <div class="col-lg-6">
       <h2 class="display-5" class="h2-custom">3 vinos seleccionados especialmente para vos.</h2>
       <p class="lead-custom">Una curaduría mensual que combina lo mejor del mundo del vino con toques personalizados. Cada botella representa una dimensión distinta de tu personalidad: tu energía vital, emocional y social.
 </p>
-    </div>
+    <p class="display-6 text-primary">$55.000 <small>/ mes</small></p>
+</div>
   </div>
 </section>
 
@@ -164,11 +165,12 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
 </section>
 <!-- /CTA -->
 
+
 <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
 <section class="section-spacing container text-center">
   <h2 class="h2-custom">Platos ideales para acompañar tu suscripción </h2>
   
-  <div class="row mt-5">
+  <div class="row mt-5 justify-content-center">
     
     <!-- Card: Plan Básico -->
     <div class="col-md-4 mb-4">
@@ -243,6 +245,22 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
 </section>
 <!-- /PLANES DE SUSCRIPCIÓN -->
 
+<!-- GALERÍA B: Masonry layout con column-count (hay controles en el css)
+<section class="section-spacing container py-5">
+  <h2 class="text-center mb-5 text-uppercase fw-bold" class="h2-custom">Descubrí lo que recibieron los suscriptores</h2>
+  
+  <div class="masonry__container">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x300" alt="Imagen 1">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x600" alt="Imagen 2">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x350" alt="Imagen 3">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x500" alt="Imagen 4">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x250" alt="Imagen 5">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x450" alt="Imagen 6">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x400" alt="Imagen 7">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x550" alt="Imagen 8">
+  </div>
+</section>
+
 <!-- TESTIMONIALS: Opiniones de clientes -->
 <section class="section-spacing container text-center">
   <h2 class="h2-custom">Ellos ya disfrutan de su suscripción</h2>
@@ -273,45 +291,23 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
 </section>
 <!-- /TESTIMONIALS -->
 
-<!-- GALERÍA E: Cards tipo "story" con imagen y texto -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">La selección estelar del mes</h2>
-  <div class="row g-4">
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="media/otros/galeria-1.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Para momentos de pausa y reflexión.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="media/otros/galeria-2.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Para abrir y compartir conversaciones.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="media/otros/galeria-3.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Cada mes cambia pero siempre es blanco.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="media/otros/galeria-4.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-    <!-- repetir para más -->
+
+<!-- GALERÍA B: Masonry layout con column-count (hay controles en el css) 
+<section class="section-spacing container py-5">
+  <h2 class="text-center mb-5 text-uppercase fw-bold" class="h2-custom">Galería tipo Masonry</h2>
+  
+  <div class="masonry__container">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x300" alt="Imagen 1">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x600" alt="Imagen 2">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x350" alt="Imagen 3">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x500" alt="Imagen 4">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x250" alt="Imagen 5">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x450" alt="Imagen 6">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x400" alt="Imagen 7">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x550" alt="Imagen 8">
   </div>
 </section>
+
 
 <!-- SECCIÓN C: Texto izquierda, imagen derecha -->
 <section class="section-spacing container">
@@ -329,6 +325,7 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
   </div>
 </section>
 
+
 <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
 <section class="section-spacing planes-suscripcion text-center">
   <div class="overlay"></div>
@@ -336,7 +333,8 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
   <div class="container position-relative">
   <h2 class="h2-custom">Elegí tu Suscripción</h2>
   
-  <div class="row mt-5">
+  <div class="row mt-5 justify-content-center">
+
     
     <!-- Card: Plan Básico -->
     <div class="col-md-4 mb-4">
@@ -409,7 +407,7 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          Uvaclub es una suscripción pensada para los amantes del vino y el universo que lo rodea. Cada mes, recibís en tu casa una caja cuidadosamente seleccionada con vinos únicos, recomendaciones personalizadas y contenido exclusivo. Es más que una caja: es una experiencia que conecta constelaciones con sabores.
         </div>
       </div>
     </div>
@@ -422,7 +420,16 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          El costo mensual es de $55.000
+Incluye:
+
+2 botellas de vino premium seleccionadas por sommeliers.
+
+Un regalo sorpresa en cada caja (accesorios, arte o delicias gourmet).
+
+Acceso anticipado a lanzamientos y descuentos especiales.
+
+Invitaciones exclusivas a catas y eventos.
         </div>
       </div>
     </div>
@@ -435,7 +442,7 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          Es muy fácil. Solo tenés que ingresar a nuestra web, elegir tu plan y completar tus datos. ¡Y listo! Tu primera caja te llega directo a casa con el próximo envío mensual. Además, podés gestionar todo desde tu perfil de usuario.
         </div>
       </div>
     </div>
@@ -448,7 +455,17 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          Al ser parte de Uvaclub, accedés a:
+
+Vinos únicos que no encontrás en supermercados.
+
+Descuentos exclusivos para miembros.
+
+Regalos y contenido curado para vos.
+
+Una comunidad que celebra el vino, el diseño y la magia de lo inesperado.
+
+Y sí, también podés descubrir nuevas constelaciones con cada etiqueta 
         </div>
       </div>
     </div>
@@ -461,7 +478,7 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Explicación detallada.
+          Sí, podés pausarla o cancelarla en cualquier momento desde tu cuenta. No hay compromiso de permanencia, porque creemos que la libertad también es parte del disfrute.
         </div>
       </div>
     </div>
@@ -476,11 +493,11 @@ Cada caja que armamos tiene intención, sabor y un poco de magia.</p>
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="position-relative">
-          <img src="media/otros/img-fondo.png" class="img-fluid img-rounded w-100 rounded" alt="Imagen 1">
+          <img src="media/otros/img-fondo-detalle.png" class="img-fluid img-rounded w-100 rounded" alt="Imagen 1">
           <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
             <div>
-              <h4 class="fw-bold" class="h4-custom">Siempre es refrescante una buena compañía</h4>
-              <p class="lead-custom">Brindemos por más momentos alegres.</p>
+              <h4 class="fw-bold" class="h4-custom">Llegó tu momento favorito del mes</h4>
+              <p class="lead-custom">Descubrí los vinos que el universo eligió para vos.</p>
             </div>
           </div>
         </div>
